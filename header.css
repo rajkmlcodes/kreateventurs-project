@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&display=swap');
+
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+}
+
+  /* fullpage header */
+.fullpage-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+    background: url(./assets/images/fullpage-header-bg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fullpage-header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1000px;
+    gap: 50px;
+}
+.fullpage-header-content h1 {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 400;
+    color: #363636;
+}
+.fullpage-header-content p {
+    font-size: 20px;
+}
+
+
+
+  /* 48em = 768px */
+  
+  @media only screen and (max-width: 768px) {
+
+    /* full page header */
+    .fullpage-header {
+        height: 400px;
+        overflow: hidden;
+        margin-bottom: 0px;
+    }
+    .fullpage-header-content {
+        width: 300px;
+        gap: 40px;
+    }
+    .fullpage-header-content h1 {
+        font-size: 28px;
+        line-height: 1.13;
+        width: 100%;
+    }
+    .fullpage-header-content p {
+        font-size: 20px;
+    }
+  }

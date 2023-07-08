@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeakPipe</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="header.css">
+
+
+    <style>
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            padding-top: 100px;
+            background: url(./assets/images/fullpage-header-bg-img.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .form-title {
+            text-align: center;
+            font-size: 44px;
+            font-weight: 400;
+            color: #e64f1d;
+            margin-bottom: 20px;
+        }
+        .input-title {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 0.5;
+            color: #555555;
+        }
+        .input {
+            outline: 0;
+            width: 450px;
+            height: 40px;
+            border: 1px solid #9999998b;
+            border-radius: 4px;
+            padding: 2px 4px;
+            margin: 10px 0 20px 0;
+        }
+        .input:focus {
+            outline: 2px solid #e64f1dd2;
+        }
+        .fdesc {
+            margin: 28px 0;
+        }
+        .form-description{
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        .login-link, .plan-page-link {
+            color: blue;
+            font-size: 18px;
+        }
+
+        .already-have-ac {
+                font-size: 18px;
+        }
+
+        .fbtn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0;
+        }
+
+        .continue-btn {
+            outline: 0;
+            border: 0;
+            /* border: 1px solid #e64f1d95; */
+            background: #e64f1d;    
+            color: #fff;
+            border-radius: 6px;
+            font-weight: 400;
+            font-size: 20px;
+            padding: 10px 0;
+            width: 130px;
+            transition: ease;
+        }
+
+        .continue-btn:hover {
+            cursor: pointer;
+            background: #e2440f;
+            color: #fff;
+        }
+
+
+        @media only screen and (max-width: 768px) {
+
+            .form-container {
+                width: 100%;
+                height: 100%;
+                padding-top: 10px;
+            }
+
+            form {
+                width: 85%;
+                overflow: hidden;
+                margin-top: 200px;
+                
+            }
+
+            .form-title {
+                font-size: 38px;
+            }
+            .input-title {
+                font-size: 20px;
+                line-height: 1.2;
+            }
+            .input {
+                outline: 0;
+                width: 95%;
+                height: 50px;
+            }
+            .input:focus {
+                outline: 1px solid #e64f1dd2;
+            }
+            .fdesc {
+                margin: 28px 0;
+            }
+            .form-description{
+                margin-bottom: 5px;
+                font-size: 18px;
+            }
+
+            .login-link, .plan-page-link {
+                color: blue;
+                font-size: 18px;
+            }
+
+            .fbtn {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 50px 0;
+            }
+
+            .continue-btn {
+                outline: 0;
+                border: 0;
+                /* border: 1px solid #e64f1d95; */
+                background: #e64f1d;    
+                color: #fff;
+                border-radius: 6px;
+                font-weight: 400;
+                font-size: 20px;
+                padding: 10px 0;
+                width: 130px;
+                transition: ease;
+            }
+
+            .continue-btn:hover {
+                cursor: pointer;
+                background: #e2440f;
+                color: #fff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="./index.html" class="logo">
+                <img src="https://www.speakpipe.com/static/img/site_v8/speakpipe-logo.svg" alt="logo">
+            </a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+              <li class="menu-items">
+                    <a href="./index.html" class="menu-link hide">Home</a>
+                </li>
+                <li class="menu-items">
+                    <a href="./faqs.html" class="menu-link hide">FAQ</a>
+                </li>
+                <li class="menu-items">
+                    <a href="./pricing.html" class="menu-link hide">Pricing</a>
+                </li>
+                <li class="menu-items" id="nav-signup-btn-div">
+                    <a href="./signup.html" class="nav-signup-btn" id="nav-signup-btn">Sign up</a>
+                </li>
+                <li class="menu-items" id="nav-login-btn-div"><a href="./login.html" class="nav-login-btn" id="nav-login-btn">Log in</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="form-container">
+        <form action="" class="form">
+            <h1 class="form-title">
+                Create your account
+            </h1>
+
+            <div class="fdesc">
+                <p class="form-description">You are about to sign up for the <strong>free</strong> plan!</p>
+                <p class="form-description">Choose one of our <a href="./pricing.html" class="plan-page-link">professional plans</a> .</p>
+            </div>
+
+            <h6 class="input-title">Your name</h6>
+            <input class="input" type="text" required> <br>
+
+            <h6 class="input-title">Your email</h6>
+            <input class="input" type="email" required> <br>
+
+            <h6 class="input-title">New password</h6>
+            <input class="input" type="password" required> <br>
+
+            <p class="already-have-ac">Already have an account? <a href="./login.html" class="login-link">Log in</a> </p>
+
+
+            <div class="fbtn">
+                <a href="" class="continue-btn-link">
+                    <button class="continue-btn">Continue</button>
+                </a>
+            </div>
+        </form>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <ul class="footer-list">
+                <li><a href="./faqs.html" class="footer-list-items">FAQ</a></li>
+                <li class="dash-line">-</li>
+                <li><a href="#" class="footer-list-items">Help</a></li>
+                <li class="dash-line">-</li>
+                <li><a href="./pricing.html" class="footer-list-items">Pricing</a></li>
+                <li class="dash-line">-</li>
+                <li><a href="#" class="footer-list-items">Feedback</a></li>
+                <li class="dash-line">-</li>
+                <li><a href="#" class="footer-list-items">Contact</a></li>
+                <li class="dash-line">-</li>
+                <li><a href="#" class="footer-list-items">Twitter</a></li>
+                <li class="dash-line">-</li>
+                <li><a href="#" class="footer-list-items">Privacy policy</a></li>
+                <li class="dash-line">-</li>
+                <li><a href="#" class="footer-list-items">Free voice recorder
+                </a></li>
+                <li class="dash-line">-</li>
+                <li class="copyright">&copy; 2023 SpeakPike</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SpeakPipe | FAQ's</title>
+    
+        <!-- favicon -->
+        <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    
+        <!-- font awesome cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <!-- CSS File -->
+        <link rel="stylesheet" href="./nav.css">
+        <link rel="stylesheet" href="./footer.css">
+        <link rel="stylesheet" href="header.css">
+
+
+        <style>
+            .faqs {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+            }
+            .faqs-heading {
+                text-align: center;
+                font-size: 40px;
+                font-weight: 400;
+                color: #e64f1d;
+                width: 1200px;
+                padding: 65px 0;
+            }
+            .faq-sections{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 30px;
+                text-align: left;
+                width: 1200px;
+            }
+            .general-faqs-section-title, .customizations-faqs-section-title, .billing-faqs-section-title {
+                font-size: 32px;
+                font-weight: 600;
+                color: #4a4a4a;
+                margin-bottom: 10px;
+            }
+            .query-and-solution {
+                display: block;
+            }
+            .question {
+                font-size: 19px;
+                font-weight: 600;
+                color: #555555;
+                margin-bottom: 10px;
+            }
+            .answer {
+                font-size: 16px;
+                font-weight: 400;
+                color: #555555;
+                margin-bottom: 10px;
+            }
+
+
+            @media only screen and (max-width: 768px) {
+                .faqs-heading {
+                    width: 100%;
+                    padding: 110px 0 30px 0;
+                }
+                .faq-sections{
+                    width: 100%;
+                    padding: 10px 30px;
+                }
+                .general-faqs-section-title, .customizations-faqs-section-title, .billing-faqs-section-title {
+                    font-size: 36px;
+                    font-weight: 600;
+                }
+                .query-and-solution {
+                    display: block;
+                }
+                .question {
+                    font-size: 22px;
+                    font-weight: 600;
+                    color: #555555;
+                    margin-bottom: 10px;
+                }
+                .answer {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: #555555;
+                    margin-bottom: 25px;
+                }
+            }
+
+
+        </style>
+    </head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="./index.html" class="logo">
+                <img src="https://www.speakpipe.com/static/img/site_v8/speakpipe-logo.svg" alt="logo">
+            </a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+              <li class="menu-items">
+                    <a href="./index.html" class="menu-link hide-on-desktop-preview">Home</a>
+                </li>
+                <li class="menu-items">
+                    <a href="./faqs.html" class="menu-link hide-on-desktop-preview">FAQ</a>
+                </li>
+                <li class="menu-items">
+                    <a href="./pricing.html" class="menu-link hide-on-desktop-preview">Pricing</a>
+                </li>
+                <li class="menu-items">
+                    <a href="./signup.html" class="nav-signup-btn menu-link">Sign up</a>
+                </li>
+                <li class="menu-items"><a href="./login.html" class="nav-login-btn menu-link">Log in</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="faqs">
+        <div class="faqs-heading">
+            Frequently Asked Questions
+        </div>
+        <div class="faq-sections">
+            <div class="general-faqs-section">
+                <div class="general-faqs-section-title">
+                    General 
+                </div>
+
+                <div class="query-and-solution">
+                    <div class="question">
+                        What is SpeakPipe?
+                    </div>
+                    <div class="answer">
+                        SpeakPipe is a simple web-based tool that allows you to interact with your audience via voice messages.
+                    </div>
+                </div>
+
+                <div class="query-and-solution">
+                    <div class="question">
+                        What is SpeakPipe?
+                    </div>
+                    <div class="answer">
+                        SpeakPipe is a simple web-based tool that allows you to interact with your audience via voice messages.
+                    </div>
+                </div>
+
+                <div class="query-and-solution">
+                    <div class="question">
+                        Is difficult to install SpeakPipe on my website?
+                    </div>
+                    <div class="answer">
+                        No, you just need to add a few lines of code to your page. See setup options here. If you don't know how to add code snippents to your website, you can look into the documentation for your website's platform or ask your webmaster to do this for you.
+                    </div>
+                </div>
+
+
+                <div class="query-and-solution">
+                    <div class="question">
+                        Can I use SpeakPipe without installing it on a website?
+                    </div>
+                    <div class="answer">
+                        Yes, you can create your personal page on SpeakPipe; share a link to this page with your audience and they will be able to send you voice messages.
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="customizations-faqs-section">
+                <div class="general-faqs-section-title">
+                    Customizations
+                </div>
+
+                <div class="query-and-solution">
+                    <div class="question">
+                        How do I remove the side button on mobile devices?
+                    </div>
+                    <div class="answer">
+                        You can disable the SpeakPipe side button on mobile devices. Go to the widget settings and turn off the option "Show the side button on mobile devices" in the "Sidebar button settings" section.
+                    </div>
+                </div>
+
+                <div class="query-and-solution">
+                    <div class="question">
+                        How do I remove the "Powered by SpeakPipe" label from the widget?
+                    </div>
+                    <div class="answer">
+                        There is no such customization.
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="billing-faqs-section">
+                <div class="billing-faqs-section-title">
+                    Billing
+                </div>
+
+                <div class="query-and-solution">
+                    <div class="question">
+                        How do I update my billing information?
+                    </div>
+                    <div class="answer">
+                        Please go to your subscription page and follow the instructions.
+                    </div>
+                </div>
+
+                <div class="query-and-solution">
+                    <div class="question">
+                        If I sign up for the paid subscription, can I cancel at anytime?
+                    </div>
+                    <div class="answer">
+                        Yes, you can cancel your subscription at anytime. If you cancel your subscription, your paid account will still be available for the rest of the current billing period. At the end of this period your SpeakPipe account will be switched to the free plan.
+                    </div>
+                </div>
+
+                <div class="query-and-solution">
+                    <div class="question">
+                        What happens when storage has reached its maximum?
+                    </div>
+                    <div class="answer">
+                        You will be notified when your storage is 90 percent full. You will have the option to upgrade your account to a bigger plan or clean up your storage. Once your storage reaches its maximum, your widgets will not be able to receive voice messages until you add more storage.
+                    </div>
+                </div>
+
+                <div class="query-and-solution">
+                    <div class="question">
+                        What's your refund policy?
+                    </div>
+                    <div class="answer">
+                        If you are not 100 percent satisfied with your purchase within 30 days of the purchase date, we will fully refund the cost of your order. If you have more questions, feel free to contact us.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <ul class="footer-list">
+                <li><a href="./faqs.html" class="footer-list-items">FAQ</a></li>
+                <li class="dash-line">-</li>
+                <li><a href="#" class="footer-list-items">Help</a></li>
+                <li class="dash-line">-</li>
+                <li><a href="./pricing.html" class="footer-list-items">Pricing</a></li>
+                <li class="dash-line">-</li>
+                <li><a href="#" class="footer-list-items">Feedback</a></li>
+                <li class="dash-line">-</li>
+                <li><a href="#" class="footer-list-items">Contact</a></li>
+                <li class="dash-line">-</li>
+                <li><a href="#" class="footer-list-items">Twitter</a></li>
+                <li class="dash-line">-</li>
+                <li><a href="#" class="footer-list-items">Privacy policy</a></li>
+                <li class="dash-line">-</li>
+                <li><a href="#" class="footer-list-items">Free voice recorder
+                </a></li>
+                <li class="dash-line">-</li>
+                <li class="copyright">&copy; 2023 SpeakPike</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
